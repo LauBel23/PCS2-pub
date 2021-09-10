@@ -1,0 +1,5 @@
+import fileinput
+
+for sequence in fileinput.input('rosalind_rna.txt'):
+        rna = sequence.replace('T','U')
+        print (rna)
