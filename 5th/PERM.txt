@@ -1,0 +1,20 @@
+def PERM(n):
+    x=list(range(1,n+1))
+
+    perm =list(itertools.permutations(x))
+    return perm
+
+
+f=open("rosalind_perm.txt","r")
+lines=f.readlines()
+n=int(lines[0])
+
+print(len(PERM(n)))
+
+res=(PERM(n))
+ 
+result = [list(x) for x in res]
+for i in res: 
+    print(*i)
+
+f.close()  

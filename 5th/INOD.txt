@@ -1,0 +1,6 @@
+f = open('rosalind_inod.txt', 'r')
+n = int(f.readline())
+f.close()
+
+
+print (n-2)
